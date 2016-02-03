@@ -1,0 +1,31 @@
+//Write an algorithm in C# such that the algorithm shall:
+//1.  Iterate over the integers beginning with 1 and ending with 100
+//2.  Print our each number in order
+//3.  If the integer is an even multiple of 3 print "fizz" instead of the number
+//4.  If the integer is an even multiple of 5 print "buzz" instead of the number
+//5.  If the integer is an even multiple of both 3 and 5 print "fizz-buzz" instead of the number
+//Pretending a button is pressed.
+
+protected void button1_Click(object sender, EventArgs e)
+{
+    for (int i = 1; i < 101; i++) //count from 1 to 100 in order
+    {
+        if ((i % 3 == 0) && (i % 5 == 0) && (i % 2 == 0)) //If integer is an even multiple of 3 and 5, print "fizz-buzz"
+        {
+            Console.Writeline("fizzbuzz" + ",");
+        }
+        else if ((i % 3 == 0) && (i % 2 == 0)) //If integer is an even multiple of 3, print "fizz"
+        {
+            Console.Writeline("fizz" + ",");
+        }
+        else if ((i % 5 == 0) && (i % 2 == 0)) //If integer is an even multiple of 5, print "buzz"
+        {
+            Console.Writeline("buzz" + ",");
+        }
+        else
+        {
+            Console.Writeline(i + ","); //All other instances, print the number
+        }           
+    }
+}
+
