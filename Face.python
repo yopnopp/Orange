@@ -1,0 +1,12 @@
+def answer():
+# I like your face
+    face = 1
+    return face
+        
+print answer()
+
+""" Do you like cheese?
+I like cheese!
+"""
+
+
